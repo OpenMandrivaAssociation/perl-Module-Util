@@ -46,3 +46,29 @@ rm -rf %{buildroot}
 %{_mandir}/man1/pm_which.1.*
 %{_mandir}/man3/*
 %{perl_vendorlib}/Module
+
+
+%changelog
+* Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 1.70.0-1mdv2010.0
++ Revision: 404020
+- rebuild using %%perl_convert_version
+
+* Sat May 02 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.07-1mdv2010.0
++ Revision: 370493
+- update to new version 1.07
+
+* Sun Nov 09 2008 Guillaume Rousse <guillomovitch@mandriva.org> 1.05-1mdv2009.1
++ Revision: 301378
+- update to new version 1.05
+
+* Mon Jun 30 2008 Guillaume Rousse <guillomovitch@mandriva.org> 1.04-1mdv2009.0
++ Revision: 230278
+- update to new version 1.04
+
+* Sat May 31 2008 Guillaume Rousse <guillomovitch@mandriva.org> 1.03-1mdv2009.0
++ Revision: 213759
+- import perl-Module-Util
+
+
+* Sat May 31 2008 Guillaume Rousse <guillomovitch@mandriva.org> 1.03-1mdv2009.0
+- first mdv release
