@@ -2,14 +2,14 @@
 %define upstream_version 1.07
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Version:    %perl_convert_version 1.09
+Release:    1
 
 Summary:    Module name tools and transformations
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Module/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/Module/Module-Util-1.09.tar.gz
 
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Module::Build::Compat)
@@ -72,3 +72,4 @@ rm -rf %{buildroot}
 
 * Sat May 31 2008 Guillaume Rousse <guillomovitch@mandriva.org> 1.03-1mdv2009.0
 - first mdv release
+
