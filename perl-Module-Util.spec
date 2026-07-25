@@ -1,14 +1,14 @@
 %define upstream_name    Module-Util
 %define upstream_version 1.09
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version 1.09
-Release:    3
+Version:    %{upstream_version}
+Release:    4
 
 Summary:    Module name tools and transformations
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Module/Module-Util-1.09.tar.gz
+Url:        https://metacpan.org/dist/Module-Util
+Source0:    https://cpan.metacpan.org/authors/id/M/MA/MATTLAW/Module-Util-1.09.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(Test::More)
