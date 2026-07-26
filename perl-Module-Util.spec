@@ -1,8 +1,7 @@
 %define upstream_name    Module-Util
-%define upstream_version 1.09
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:    4
+Version:    1.09
+Release:    5
 
 Summary:    Module name tools and transformations
 License:    GPL+ or Artistic
@@ -23,7 +22,7 @@ modules that manipulate other modules in some way, like converting module
 names to relative paths.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -51,9 +50,7 @@ rm -rf %{buildroot}
 %changelog
 * Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 1.70.0-1mdv2010.0
 + Revision: 404020
-- rebuild using %%perl_convert_version
-
-* Sat May 02 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.07-1mdv2010.0
+- rebuild using %1.09 Sat May 02 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.07-1mdv2010.0
 + Revision: 370493
 - update to new version 1.07
 
