@@ -2,7 +2,7 @@
 %define upstream_version 1.09
 Name:       perl-%{upstream_name}
 Version:	1.09
-Release:	3
+Release:	4
 
 Summary:    Module name tools and transformations
 License:    GPL+ or Artistic
@@ -11,10 +11,10 @@ Url:        https://metacpan.org/dist/Module-Util
 Source0:	https://cpan.metacpan.org/authors/id/M/MA/MATTLAW/Module-Util-1.09.tar.gz
 
 BuildRequires:	make
+BuildRequires:	perl-devel
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Module::Build::Compat)
 BuildArch: noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module provides a few useful functions for manipulating module names.
@@ -26,7 +26,7 @@ names to relative paths.
 %setup -q -n Module-Util-1.09
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
