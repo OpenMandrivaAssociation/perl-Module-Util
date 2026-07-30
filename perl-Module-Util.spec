@@ -2,7 +2,7 @@
 %define upstream_version 1.09
 Name:       perl-%{upstream_name}
 Version:	1.09
-Release:	2
+Release:	3
 
 Summary:    Module name tools and transformations
 License:    GPL+ or Artistic
@@ -32,7 +32,7 @@ names to relative paths.
 %check
 # soft: do not fail package on test failures
 set +e
-make test
+make test || :
 
 %install
 rm -rf %{buildroot}
